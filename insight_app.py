@@ -132,7 +132,7 @@ col1, col2, col3 = st.columns(3)
 # CARDS 
 # -------------------------- 
 with col1: 
-st.markdown(f""" 
+  st.markdown(f""" 
     <div class="card fade"> 
         <div class="metric">Income</div> 
         <div class="highlight">${customer['income']}</div> 
