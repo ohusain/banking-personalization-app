@@ -59,18 +59,21 @@ animation: fadeIn 1s ease-in;
 # -------------------------- 
 # LOAD / GENERATE DATA 
 # -------------------------- 
-if not os.path.exists("customers.csv"): 
-  data = pd.DataFrame({ 
-    "customer_id": range(1, 201), 
-    "income": np.random.randint(30000, 120000, 200), 
-    "rent": np.random.randint(800, 2500, 200), 
-    "food": np.random.randint(200, 800, 200), 
-    "travel": np.random.randint(0, 1500, 200), 
-    "shopping": np.random.randint(100, 1500, 200), 
-    "savings": np.random.randint(0, 20000, 200) 
-}) 
-data.to_csv("customers.csv", index=False) 
-df = pd.read_csv("customers.csv") 
+
+if not os.path.exists("customers.csv"):
+    data = pd.DataFrame({
+        "customer_id": range(1, 201),
+        "income": np.random.randint(30000, 120000, 200),
+        "rent": np.random.randint(800, 2500, 200),
+        "food": np.random.randint(200, 800, 200),
+        "travel": np.random.randint(0, 1500, 200),
+        "shopping": np.random.randint(100, 1500, 200),
+        "savings": np.random.randint(0, 20000, 200)
+    })
+    data.to_csv("customers.csv", index=False)
+
+df = pd.read_csv("customers.csv")
+
 # -------------------------- 
 # FEATURES 
 # -------------------------- 
