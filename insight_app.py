@@ -84,7 +84,7 @@ features = df[["income", "travel", "shopping"]]
 kmeans = KMeans(n_clusters=3, random_state=42) 
 df["segment"] = kmeans.fit_predict(features) 
 segment_map = {   
-1: "     
+  
 High Value", 
 Traveler", 
     2: "     Shopper" 
