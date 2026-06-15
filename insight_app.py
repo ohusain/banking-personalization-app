@@ -122,7 +122,7 @@ st.markdown("<h1 class='fade'>🏦 Smart Banking Dashboard</h1>", unsafe_allow_h
 customer_id = st.slider("Select Customer", 1, len(df)) 
 # Simulated loading animation 
 with st.spinner("Analyzing customer data..."): 
-time.sleep(0.6) 
+  time.sleep(0.6) 
 customer = df[df["customer_id"] == customer_id].iloc[0] 
 # -------------------------- 
 # LAYOUT 
