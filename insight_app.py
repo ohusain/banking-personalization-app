@@ -116,7 +116,7 @@ def generate_insight(row):
 # -------------------------- 
 # HEADER 
 # -------------------------- 
-st.markdown("<h1 class='fade'>      
+st.markdown("<h1 class='fade'">      
 unsafe_allow_html=True) 
 Smart Banking Dashboard</h1>", 
 customer_id = st.slider("Select Customer", 1, len(df)) 
